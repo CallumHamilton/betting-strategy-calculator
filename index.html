@@ -12,7 +12,7 @@
 <div class="field"><label for="bank">Bank (£)</label><input id="bank" type="number" min="1" step="100" value="1000"></div>
 <div class="field"><label for="days">Days</label><input id="days" type="number" min="1" max="100000" step="1" value="3333"></div>
 <div class="field"><label for="paths">Monte Carlo paths</label><select id="paths"><option value="1000">1,000 · quick</option><option value="3000" selected>3,000 · balanced</option><option value="10000">10,000 · detailed</option><option value="20000">20,000 · slower</option></select></div>
-<div class="field"><label for="pct">Drawdown percentile</label><select id="pct"><option value="50">50th</option><option value="75">75th</option><option value="85" selected>85th</option><option value="90">90th</option><option value="95">95th</option><option value="99">99th</option></select></div>
+<div class="field"><label for="pct">Max drawdown percentile</label><select id="pct"><option value="50">50th</option><option value="75">75th</option><option value="85" selected>85th</option><option value="90">90th</option><option value="95">95th</option><option value="99">99th</option></select></div>
 <div class="field"><label for="seed">Seed</label><input id="seed" type="number" step="1" value="20261118"></div>
 <div class="field"><label for="buffer">Stake buffer</label><select id="buffer"><option value="1" selected>One full day's stake</option><option value="0">Drawdown only</option></select></div>
 </div><div class="actions"><button id="run">Calculate</button><button class="secondary" id="csv" disabled>Export CSV</button><span class="small" id="status">Ready</span></div><div class="small method-note">Drawdown-based stake sizing; not a ruin-probability estimate. Expected profit assumes all bets are placed.</div></section>
